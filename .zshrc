@@ -10,7 +10,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/adal/.oh-my-zsh"
+export ZSH="/$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -116,6 +116,10 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias diff='diff --color=auto'
+alias connectGithub='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/github'
+alias connectGcloud='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/gcloud'
+alias connectGitVPS='eval "$(ssh-agent -s)" && ssh-add ~/.ssh/gitVPS'
+alias connectBitacora='ssh -i ~/.ssh/bitacora -p 9022 mau@bitacora.puertovallarta.gob.mx'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
