@@ -20,4 +20,4 @@ bspc rule -a Screenkey manage=off
 
 xrandr --output VGA-1 --mode 1366x768 --rate 60
 feh --bg-scale /home/adal/Downloads/wavy_lines_v01_5120x2880.png
-picom --conf $HOME/.config/picom/picom.conf --experimental-backend
+picom --conf $HOME/.config/picom/picom.conf --experimental-backends
