@@ -12,7 +12,7 @@
 <li><strong>Color scheme:</strong> Catppuccin.</li>
 <li><strong>Launcher:</strong> Rofi.</li>
 <li><strong>Shell:</strong> zsh.</li>
-<li><strong>erminal:</strong> kitty.</li>
+<li><strong>Terminal:</strong> kitty.</li>
 <li><strong>Font:</strong> FiraCode Nerd Font</li>
 </ul>
 </p>
