@@ -17,6 +17,6 @@
 </ul>
 </p>
 <br>
-<a href="https://imgur.com/lT16P54"><img src="https://i.imgur.com/lT16P54.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/MvtH2lG"><img src="https://i.imgur.com/MvtH2lG.png" title="source: imgur.com" /></a>
-<a href="https://imgur.com/RYprGki"><img src="https://i.imgur.com/RYprGki.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/x9tVc9K"><img src="https://i.imgur.com/x9tVc9K.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/fD3ZJJl"><img src="https://i.imgur.com/fD3ZJJl.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Drk0Nev"><img src="https://i.imgur.com/Drk0Nev.png" title="source: imgur.com" /></a>
