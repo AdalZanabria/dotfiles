@@ -178,8 +178,8 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=008
-  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=015
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=001
+  typeset -g POWERLEVEL9K_OS_ICON_BACKGROUND=007
   # Custom icon.
   # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
 
@@ -208,7 +208,7 @@
 
   ##################################[ dir: current directory ]##################################
   # Current directory background color.
-  typeset -g POWERLEVEL9K_DIR_BACKGROUND=006
+  typeset -g POWERLEVEL9K_DIR_BACKGROUND=004
   # Default current directory foreground color.
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=008
   # If directory is too long, shorten some of its segments to the shortest possible unique
@@ -905,8 +905,8 @@
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=3
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=0
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=000
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=013
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=008
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=005
 
   # Context format when running with privileges: user@hostname.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%n@%m'
