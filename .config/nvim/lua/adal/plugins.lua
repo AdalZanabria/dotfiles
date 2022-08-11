@@ -54,6 +54,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use 'goolord/alpha-nvim'
   use "norcalli/nvim-colorizer.lua"
+  use "davidgranstrom/nvim-markdown-preview"
 
   -- Colorschemes
   use { "catppuccin/nvim", as = "catppuccin" }
