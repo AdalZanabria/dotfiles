@@ -1,10 +1,18 @@
 #! /bin/sh
+set -xv
+exec 2>>/tmp/bspwm.log
+
+intern=eDP-1-1
+extern=HDMI-0
 
 pgrep -x sxhkd > /dev/null || sxhkd &
-$HOME/.config/polybar/launch.sh
 
-bspc monitor DP-1 -d 1 2 3 4 5
-bspc monitor HDMI-2 -d 6 7 8 9 0
+if xrandr | grep "$extern connected"; then
+  bspc monitor $extern -d 1 2 3 4 5
+  bspc monitor $intern -d 6 7 8 9 0
+else
+  bspc monitor $intern -d 1 2 3 4 5
+fi
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -13,17 +21,12 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
-if [[ $(xrandr -q | grep 'HDMI-2 connected') ]]
-then
-xrandr --output DP-1 --primary --rotate normal --mode 1366x768 --rate 60 --output HDMI-2 --rotate normal --mode 1366x768 --rate 60 --right-of DP-1
+if xrandr | grep "$extern connected"; then
+  xrandr --output $intern --mode 1920x1080 --pos 3840x1080 --rotate normal --output DP-1 --off --output HDMI-1 --off --output $extern --primary --mode 3840x2160 --pos 0x0 --rotate normal --scale 0.80x0.80 --output DP-1-0 --off --output DP-1-1 --off
 else
-xrandr --output DP-1 --primary --rotate normal --mode 1366x768 --rate 60
+  xrandr --output $intern --primary --mode 1920x1080 --rotate normal
 fi
-feh --bg-scale /home/adal/Downloads/debian-magenta-blue-1920x1080.png
-picom --conf $HOME/.config/picom/picom.conf --experimental-backends
+
+feh --bg-scale ~/Pictures/arch-magenta-pink-1920x1080.png
+~/.config/polybar/launch.sh
+picom --conf ~/.config/picom/picom.conf --experimental-backends
